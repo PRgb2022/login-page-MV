@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+body {
+    margin: 0px;
+    padding: 0px;
+  /* background-color: #081666; */
+  background-image: url(images/medivault\ back-img.avif)  ;
+  background-repeat: no-repeat;
+  background-size: 100% 105%;
+  /* background-position: center; */
+  font-family: Arial, sans-serif;
+}
+
+/* .work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+.container {
+  width: 350px;
+  padding: 20px;
+  margin: 100px auto;
+  /* background-color: rgba(0, 0, 0, 0.0); */
+  background-color: rgba(176, 224, 240, 0.858);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+/* #background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+     width: 100%; 
+    height: 100%; 
+    z-index: -1;
+     object-fit: cover; /*Ensures the video covers the entire background 
+} */
+
+.welcome{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  
+  color: #043873;
+  text-align: center;
+}
+
+.detail{
+  text-align: center;
+  margin-left: -10px;
+  margin-top: -20px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.uhid{
+    text-align: center;
+}
+
+.signup{
+    text-decoration: none;
+    text-align: center;
+}
+.signup a:hover{
+    text-decoration: underline;
+}
+
+.sign{
+    margin-top: -75px;
+    text-align: center;
+    /* color: #dbd9ed; */
+   
+    /* border: 2px; */
+}
+.sign a {
+    text-decoration: none;
+    color: rgb(4, 119, 251);
+}
+.sign a:hover{
+   text-decoration: underline;
+}
+input[type="text"], 
+input[type="password"] {
+  width: 117%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #b4afaf2b;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+.uhid input{
+  background-color: #b0ccd9ce;
+  font-size: 15px;
+  padding: 10px 10px 10px 40px
+  /* background-color: rgba(0, 0, 0, 0.0); */
+}
+.uhid{
+  position: relative;
+  width: 300px;
+}
+.uhid .fa-user {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #aaa;
+        }
+             
+.uhid .fa-lock{
+  position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #aaa;
+}
+
+.remember{
+    display:flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height:normal;
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+
+.navbar{
+  display: flex;
+  height: 70px;
+  /* border: 2px solid black; */
+  background-color: rgba(232, 230, 230, 0.2);
+  margin: 0px 0px;
+  /* margin-top: -17px; */
+  box-shadow: 0 0 10px rgba(3, 3, 3, 0.908);
+}
+
+.navbar img{
+  width: 5%;
+  height: 100%;
+  margin-left: 90px;
+  mix-blend-mode: color-burn;
+  
+}
+.h1colour{
+  color: rgb(1, 1, 57);
+}
+.h2colour{
+  color: rgb(8, 127, 224);
+}
+.roles{
+    /* position:absolute; */
+    width: 450px;
+    
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.roles select{
+    margin-left: -5px;
+    width: 352px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgba(232, 230, 230, 0.2);
+}
+
+button {
+  
+  background-color: #2d14ea; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  margin-top: 32px;
+  width: 100%;
+  cursor: pointer;
+  
+  border-radius: 5px;
+}
+button:hover {
+    background-color: #0318bb;
+  }
+</style>
+</head>
+<body>
+  <!-- <video autoplay loop muted playsinline id="background-video">
+    <source src="images/ModernBlue Digital Tech Business Summit Video Background .MP4" type="video/mp4">
+    Your browser does not support the video tag.
+</video> -->
+<div class="navbar">
+    <img src="images/Untitled design.jpg">
+    <h1><span class="h1colour">MEDI</span><span class="h2colour">VAULT</span></h1>
+</div>
+<div class="container">
+  <div class="wel">
+    <div class="welcome">
+      <p style="font-size: 30px;">Administration Login</p>
+    </div>
+  <div class="detail">
+    <p style="font-size: 14px;">Only authorised person can login.</p>
+  </div>
+  </div>
+  <form>
+    <div class = "uhid">
+        <label for="uname"></label>
+        <!-- <div class="input-container"> -->
+          <i class="fas fa-user"></i> <!-- Font Awesome User Icon -->
+          <!-- <input type="text" placeholder="Enter your username"> -->
+      <!-- </div> -->
+    <input type="text" id="uname" name="uname" placeholder="UID" required>
+    </div>
+
+    <div class="uhid">
+        <label for="psw"></label>
+        <i class="fas fa-lock"></i>
+    <input type="password" id="psw" name="psw" placeholder="PASSWORD"required>
+    </div>
+    <div class="roles">
+        <label for="roles"></label>
+                    <select id="roles" name="roles" aria-placeholder="Roles" >
+                        <option value="doctor">Doctor</option>
+                        <option value="hospital">Hospital</option>
+                        <!-- Add other roles as needed -->
+                    </select>
+    </div>
+    
+    <div class="remember">
+        <div class = "rememberme">
+            <input type="checkbox" class="rememberme" checked>
+            <label for="rememberme" >Remember me</label>
+            
+        </div>
+        <a class = "signup" href = "#">Forgot password? </a>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+  
+  <div class = "signup">
+    
+  <p><a class = "signup" href = "index.html">Patient login? </a></p>
+  <!-- <p>Do not have an account?<a href="#">&nbsp;&nbsp;Sign up</a></p> -->
+  
+  </div>
+</div>
+<div class = "sign">
+    <p><span style="color: rgb(8, 8, 8);">Do not have an account?</span>&nbsp;&nbsp;<a href="#">Sign Up</a></p>
+</div>
+<div class="footer">
+  <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit, repudiandae delectus nulla tempora alias sint vel inventore? Expedita, voluptate.</p> -->
+</div>
+
+</body>
+</html>

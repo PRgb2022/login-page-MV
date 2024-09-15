@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+body {
+    margin: 0px;
+    padding: 0px;
+  background-color: #081666;
+  background-image: url(images/medivault\ back-img.avif)  ;
+  background-repeat: no-repeat;
+  background-size: 100% 105%;
+  /* background-position: center; */
+  font-family: Arial, sans-serif;
+}
+
+/* .work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+.container {
+  width: 585px;
+  padding: 20px;
+  margin: 100px auto;
+  /* background-color: rgba(0, 0, 0, 0.0); */
+  background-color: rgba(176, 224, 240, 0.858);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+/* #background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+     width: 100%; 
+    height: 100%; 
+    z-index: -100;
+     object-fit: cover; /*Ensures the video covers the entire background */
+/* } */ 
+
+.welcome{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  
+  
+  color: #043873;
+  text-align: center;
+}
+
+.detail{
+  text-align: center;
+  margin-left: -10px;
+  margin-top: -20px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.uhid{
+    text-align: center;
+}
+
+.signup{
+    text-decoration: none;
+    text-align: center;
+}
+.signup a:hover{
+    text-decoration: underline;
+}
+
+.sign{
+    margin-top: -75px;
+    text-align: center;
+    /* color: #dbd9ed; */
+   
+    /* border: 2px; */
+}
+.sign a {
+    text-decoration: none;
+    color: rgb(4, 119, 251);
+}
+.sign a:hover{
+   text-decoration: underline;
+}
+input[type="text"], 
+input[type="password"] {
+  width: 117%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #b4afaf2b;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+.uhid input{
+  background-color: #b0ccd9ce;
+  font-size: 15px;
+  padding: 10px 10px 10px 40px;
+  border: 1px solid rgb(1, 41, 97);
+  /* background-color: rgba(0, 0, 0, 0.0); */
+}
+.uhid{
+  position: relative;
+  width: 500px;
+}
+.uhid input[type="email"] {
+            width: 530px;
+            border-radius: 5px; 
+            border: 1px solid rgb(1, 41, 97);
+            /* border-color: #b0ccd9ce; */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+ .uhid select{
+    width: 150px;
+    height: 39px;
+    
+    /* border-color: #b0ccd9ce; */
+    border-radius: 5px;
+    background-color: #b0ccd9ce;
+ }  
+ .dob-gender{
+    display: flex;
+    margin-left: -20px;
+    margin-right: -4px;
+    /* border: 2px solid red; */
+ }     
+ .dob-add{
+    display: flex;
+    margin-top: 10px;
+ }
+/* .uhid .fa-user {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #aaa;
+        }
+             
+.uhid .fa-lock{
+  position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #aaa; */
+/* } */
+
+.remember{
+    display:flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height:normal;
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+
+.navbar{
+    position: relative;
+    /* mix-blend-mode: color-burn; */
+  display: flex;
+  width: 100%;
+  height: 70px;
+  
+  background-color: rgba(232, 230, 230, 0.2);
+  margin: 0px 0px;
+  
+  box-shadow: 0 0 10px rgba(3, 3, 3, 0.908);
+  
+}
+.navbar img{
+  width: 5%;
+  height: 100%;
+  margin-left: 90px;
+  mix-blend-mode: color-burn;
+  
+}
+
+.h1colour{
+  color: rgb(1, 1, 57);
+}
+.h2colour{
+  color: rgb(8, 127, 224);
+}
+
+.checkbox a{
+    text-decoration: none;
+}
+
+.checkbox a:hover{
+    text-decoration: underline;
+}
+
+button {
+  
+  background-color: #2d14ea; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  margin-top: 32px;
+  width: 100%;
+  cursor: pointer;
+  
+  border-radius: 5px;
+}
+button:hover {
+    background-color: #0318bb;
+  }
+</style>
+</head>
+<body>
+  <!-- <video autoplay loop muted playsinline id="background-video">
+    <source src="images/ModernBlue Digital Tech Business Summit Video Background .MP4" type="video/mp4">
+    Your browser does not support the video tag.
+</video> -->
+<div class="navbar">
+    <img src="images/Untitled design.jpg">
+    <h1><span class="h1colour">MEDI</span><span class="h2colour">VAULT</span></h1>
+</div>
+<div class="container">
+  <div class="wel">
+    <div class="welcome">
+      <p style="font-size: 40px;">Create Account</p>
+    </div>
+  <!-- <div class="detail">
+    <p style="font-size: 14px;">Enter your necessary deatails here</p>
+  </div> -->
+  </div>
+  <form>
+    <!-- <div class = "uhid"> -->
+        <!-- <label for="uname"></label> -->
+        <!-- <div class="input-container"> -->
+          <!-- <i class="fas fa-user"></i> Font Awesome User Icon -->
+          <!-- <input type="text" placeholder="Enter your username"> -->
+      <!-- </div> -->
+    <!-- <input type="text" id="uname" name="uname" placeholder="UHID / AADHAR NO" required> -->
+    <!-- </div> -->
+
+    <!-- <div class="uhid">
+        <label for="psw"></label>
+        <i class="fas fa-lock"></i>
+    <input type="password" id="psw" name="psw" placeholder="PASSWORD"required> -->
+    <!-- </div> -->
+    <div class="uhid">
+        <label for="aadhaar"><span class="required"></span></label>
+        <input type="text" id="aadhaar" name="aadhaar" placeholder="Aadhaar Number">
+    </div>
+    <div class="uhid">
+        <label for="full-name"> <span class="required"></span></label>
+        <input type="text" id="full-name" name="full-name" placeholder="Full Name">
+    </div>
+    <div class="dob-gender">
+        
+        <div class="uhid">
+            <label for="gender">Gender<span class="required">*&nbsp;&nbsp;</span></label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="uhid">
+            <label for="blood-group">Blood Group  <span class="required">*&nbsp;&nbsp;</span></label>
+            <select id="blood-group" name="blood-group">
+                <option value="a+">A+</option>
+                <option value="a-">A-</option>
+                <option value="b+">B+</option>
+                <option value="b-">B-</option>
+                <option value="ab+">AB+</option>
+                <option value="ab-">AB-</option>
+                <option value="o+">O+</option>
+                <option value="o-">O-</option>
+            </select>
+        </div>
+    </div>
+    
+   
+    
+    <div class="dob-add">
+        <div class="uhid">
+            <label for="dob">D.O.B <span class="required">*&nbsp;&nbsp;</span></label>
+            <input type="date" id="dob" name="dob" placeholder="DOB">
+        </div>
+        <div class="uhid">
+            <label for="state">State & UTs <span class="required">*&nbsp;&nbsp;</span></label>
+            <select id="state" name="state">
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            </select>
+        </div>
+    </div>
+    <div class="uhid">
+        <label for="address"> <span class="required"></span></label>
+        <input type="text" id="address" name="address" placeholder="Address">
+    </div>
+    <div class="uhid">
+        <label for="city"> <span class="required"></span></label>
+        <input type="text" id="city" name="city" placeholder="City">
+    </div>
+    <div class="uhid">
+        <label for="zip"><span class="required"></span></label>
+        <input type="text" id="zip" name="zip" placeholder="Zip Code">
+    </div>
+    <div class="uhid">
+        <label for="mobile"><span class="required"></span> <span class="small-text"></span></label>
+        <input type="text" id="mobile" name="mobile" placeholder="Mobile Number(as per aadhaar)">
+    </div>
+    <div class="uhid">
+        <label for="emergency"><span class="required"></span></label>
+        <input type="text" id="emergency" name="emergency" placeholder="Emergency Number">
+    </div>
+    <div class="uhid">
+        <label for="email"> <span class="required"></span></label>
+        <input type="email" id="email" name="email" placeholder="Email">
+    </div>
+    <div class="uhid">
+        <label for="guardian-name"><span class="small-text"></span></label>
+        <input type="text" id="guardian-name" name="guardian-name" placeholder="Guardian Name(if minor or dependent)">
+    </div>
+    
+    <div class="uhid">
+        <label for="password"><span class="required"></span></label>
+        <input type="password" id="password" name="password" placeholder="Create Password">
+    </div>
+    <div class="uhid">
+        <label for="confirm-password"><span class="required"></span></label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
+    </div>
+    <div class="uhid">
+        <label for="otp"> <span class="required"></span></label>
+        <input type="text" id="otp" name="otp" class="otp-verification" placeholder="Enter your OTP ">
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms" class="checkbox-label">I consent for <a href="#">Aadhaar verification</a> <span class="required"></span></label>
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" id="agreement" name="agreement">
+        <label for="agreement" class="checkbox-label">I agree to the <a href="#">terms & conditions</a> <span class="required"></span></label>
+    </div>
+    <!-- <div class="remember">
+        <div class = "rememberme">
+            <input type="checkbox" class="rememberme" checked>
+            <label for="rememberme" >Remember me</label>
+            
+        </div>
+        <a class = "signup" href = "#">Forgot password? </a>
+    </div> -->
+
+    <button type="submit">Sign Up</button>
+  </form>
+  
+  <div class = "signup">
+    
+  <!-- <p><a class = "signup" href = "adminlogin2.html">Administration login? </a></p> -->
+  <!-- <p>Do not have an account?<a href="#">&nbsp;&nbsp;Sign up</a></p> -->
+  
+  </div>
+</div>
+<div class = "sign">
+    <p><span style="color: rgb(12, 12, 12);">Already have an account?</span>&nbsp;&nbsp;<a href="in">Sign in</a></p>
+</div>
+<div class="footer">
+  <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit, repudiandae delectus nulla tempora alias sint vel inventore? Expedita, voluptate.</p> -->
+</div>
+
+</body>
+</html>
