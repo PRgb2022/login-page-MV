@@ -24,13 +24,15 @@ body {
 } */
 
 .container {
-  width: 585px;
+  
+  width: 55%;
   padding: 20px;
   margin: 100px auto;
   /* background-color: rgba(0, 0, 0, 0.0); */
   background-color: rgba(176, 224, 240, 0.858);
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  
 }
 /* #background-video {
     position: fixed;
@@ -66,9 +68,7 @@ h2 {
   color: #333;
 }
 
-.uhid{
-    text-align: center;
-}
+
 
 .signup{
     text-decoration: none;
@@ -94,9 +94,9 @@ h2 {
 }
 input[type="text"], 
 input[type="password"] {
-  width: 117%;
+  width: 150%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 80px;
   display: inline-block;
   border: 1px solid #b4afaf2b;
   border-radius: 5px;
@@ -106,20 +106,25 @@ input[type="password"] {
 
 .uhid input{
   background-color: #b0ccd9ce;
+  /* text-align: center; */
   font-size: 15px;
   padding: 10px 10px 10px 40px;
   border: 1px solid rgb(1, 41, 97);
-  /* background-color: rgba(0, 0, 0, 0.0); */
+  background-color: rgb(198, 233, 248);
 }
 .uhid{
   position: relative;
   width: 500px;
+  margin-top: 10px;
 }
 .uhid input[type="email"] {
-            width: 530px;
+            width: 140%;
             border-radius: 5px; 
             border: 1px solid rgb(1, 41, 97);
             /* border-color: #b0ccd9ce; */
+            background-color: rgb(198, 233, 248);
+            margin-left: 80px;
+            margin-right: 50px;
             margin-top: 10px;
             margin-bottom: 10px;
         }
@@ -129,17 +134,18 @@ input[type="password"] {
     
     /* border-color: #b0ccd9ce; */
     border-radius: 5px;
-    background-color: #b0ccd9ce;
+    background-color: rgb(198, 233, 248);
  }  
  .dob-gender{
     display: flex;
-    margin-left: -20px;
+    margin-left: 80px;
     margin-right: -4px;
     /* border: 2px solid red; */
  }     
  .dob-add{
     display: flex;
     margin-top: 10px;
+    margin-left: 80px;
  }
 /* .uhid .fa-user {
             position: absolute;
@@ -188,16 +194,21 @@ input[type="password"] {
   margin-left: 90px;
   mix-blend-mode: color-burn;
   
+}.label{
+  margin-left: 80px;
 }
 
 .h1colour{
   color: rgb(1, 1, 57);
 }
 .h2colour{
-  color: rgb(8, 127, 224);
+  color: rgb(14, 78, 240);
 }
-
+.checkbox{
+  margin-left: 80px;
+}
 .checkbox a{
+    /* margin-left: 70px; */
     text-decoration: none;
 }
 
@@ -216,8 +227,9 @@ button {
   display: inline-block;
   font-size: 16px;
   /* margin: 4px 2px; */
+margin-left: 40%;
   margin-top: 32px;
-  width: 100%;
+  width: 20%;
   cursor: pointer;
   
   border-radius: 5px;
@@ -239,7 +251,7 @@ button:hover {
 <div class="container">
   <div class="wel">
     <div class="welcome">
-      <p style="font-size: 40px;">Create Account</p>
+      <p style="font-size: 40px;">PATIENT Registration:)</p>
     </div>
   <!-- <div class="detail">
     <p style="font-size: 14px;">Enter your necessary deatails here</p>
@@ -261,17 +273,21 @@ button:hover {
     <input type="password" id="psw" name="psw" placeholder="PASSWORD"required> -->
     <!-- </div> -->
     <div class="uhid">
-        <label for="aadhaar"><span class="required"></span></label>
+        <div class="label"><label for="aadhaar"> Aadhaar<span style="color: red;">*</span> <span class="required"></span></label></div>
         <input type="text" id="aadhaar" name="aadhaar" placeholder="Aadhaar Number">
     </div>
     <div class="uhid">
-        <label for="full-name"> <span class="required"></span></label>
+        <div class="label">
+          <label for="full-name"> Name <span style="color: red;">*</span> <span class="required"></span></label>
+        </div>
         <input type="text" id="full-name" name="full-name" placeholder="Full Name">
     </div>
     <div class="dob-gender">
         
         <div class="uhid">
-            <label for="gender">Gender<span class="required">*&nbsp;&nbsp;</span></label>
+            <!-- <div class="label"> -->
+              <label for="gender">Gender<span class="required"><span style="color: red;">*</span>&nbsp;&nbsp;</span></label>
+            <!-- </div> -->
             <select id="gender" name="gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -280,7 +296,9 @@ button:hover {
         </div>
 
         <div class="uhid">
-            <label for="blood-group">Blood Group  <span class="required">*&nbsp;&nbsp;</span></label>
+            <!-- <div class="label"> -->
+              <label for="blood-group">Blood Group  <span class="required"><span style="color: red;">*</span>&nbsp;&nbsp;</span></label>
+            <!-- </div> -->
             <select id="blood-group" name="blood-group">
                 <option value="a+">A+</option>
                 <option value="a-">A-</option>
@@ -298,11 +316,13 @@ button:hover {
     
     <div class="dob-add">
         <div class="uhid">
-            <label for="dob">D.O.B <span class="required">*&nbsp;&nbsp;</span></label>
+            <!-- <div class="label"> -->
+              <label for="dob">D.O.B <span class="required"><span style="color: red;">*</span>&nbsp;&nbsp;</span></label>
+            <!-- </div> -->
             <input type="date" id="dob" name="dob" placeholder="DOB">
         </div>
         <div class="uhid">
-            <label for="state">State & UTs <span class="required">*&nbsp;&nbsp;</span></label>
+            <label for="state">State & UTs <span class="required"><span style="color: red;">*</span>&nbsp;&nbsp;</span></label>
             <select id="state" name="state">
                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -344,44 +364,72 @@ button:hover {
         </div>
     </div>
     <div class="uhid">
-        <label for="address"> <span class="required"></span></label>
+        <div class="label">
+          <label for="address"> Address <span style="color: red;">*</span> <span class="required"></span></label>
+        </div>
         <input type="text" id="address" name="address" placeholder="Address">
     </div>
     <div class="uhid">
-        <label for="city"> <span class="required"></span></label>
+        <div class="label">
+          <label for="city"> City <span style="color: red;">*</span><span class="required"></span></label>
+        </div>
         <input type="text" id="city" name="city" placeholder="City">
     </div>
     <div class="uhid">
-        <label for="zip"><span class="required"></span></label>
+      <div class="label">
+        <label for="zip"> Zip <span style="color: red;">*</span> <span class="required"></span></label>
+      </div>
+        
         <input type="text" id="zip" name="zip" placeholder="Zip Code">
     </div>
     <div class="uhid">
-        <label for="mobile"><span class="required"></span> <span class="small-text"></span></label>
+      <div class="label">
+        <label for="mobile"> Mobile <span style="color: red;">*</span> <span class="required"></span> <span class="small-text"></span></label>
+      </div>
+        
         <input type="text" id="mobile" name="mobile" placeholder="Mobile Number(as per aadhaar)">
     </div>
     <div class="uhid">
-        <label for="emergency"><span class="required"></span></label>
+      <div class="label">
+        <label for="emergency"> Emergency <span style="color: red;">*</span> <span class="required"></span></label>
+      </div>
+        
         <input type="text" id="emergency" name="emergency" placeholder="Emergency Number">
     </div>
     <div class="uhid">
-        <label for="email"> <span class="required"></span></label>
+      <div class="label">
+        <label for="email"> Email <span style="color: red;">*</span> <span class="required"></span></label>
+      </div>
+        
         <input type="email" id="email" name="email" placeholder="Email">
     </div>
     <div class="uhid">
-        <label for="guardian-name"><span class="small-text"></span></label>
+      <div class="label">
+        <label for="guardian-name"> Guardian-Name <span style="color: red;">*</span> <span class="small-text"></span></label>
+      </div>
+        
         <input type="text" id="guardian-name" name="guardian-name" placeholder="Guardian Name(if minor or dependent)">
     </div>
     
     <div class="uhid">
-        <label for="password"><span class="required"></span></label>
+      <div class="label">
+        <label for="password"> Password <span style="color: red;">*</span> <span class="required"></span></label>
+      </div>
+        
         <input type="password" id="password" name="password" placeholder="Create Password">
     </div>
     <div class="uhid">
-        <label for="confirm-password"><span class="required"></span></label>
+      <div class="label">
+        <label for="confirm-password"> Confirm-Password <span style="color: red;">*</span> <span class="required"></span></label>
+      </div>
+        
         <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
     </div>
     <div class="uhid">
-        <label for="otp"> <span class="required"></span></label>
+      <div class="label">
+        <label for="OTP"> OTP<span style="color: red;">*</span> <span class="required"></span></label>
+      </div>
+        
         <input type="text" id="otp" name="otp" class="otp-verification" placeholder="Enter your OTP ">
     </div>
     <div class="checkbox">
@@ -412,7 +460,7 @@ button:hover {
   </div>
 </div>
 <div class = "sign">
-    <p><span style="color: rgb(12, 12, 12);">Already have an account?</span>&nbsp;&nbsp;<a href="in">Sign in</a></p>
+    <p><span style="color: rgb(12, 12, 12);">Already have an account?</span>&nbsp;&nbsp;<a href="index.html">Sign in</a></p>
 </div>
 <div class="footer">
   <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit, repudiandae delectus nulla tempora alias sint vel inventore? Expedita, voluptate.</p> -->

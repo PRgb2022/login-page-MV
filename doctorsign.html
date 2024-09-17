@@ -6,6 +6,9 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-image: url(images/medivault\ back-img.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
             background-color: #f9f9f9;
             display: flex;
             justify-content: center;
@@ -15,24 +18,52 @@
         .container {
             display: flex;
             flex-direction: row;
-            width: 90%;
+            width: 80%;
             height: 90vh;
+            background-color: rgba(144, 27, 27, 0.1);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow: hidden;
         }
+        .h1colour{
+             color: rgb(1, 1, 57);
+        }
+        .h2colour{
+            color: rgb(14, 78, 240);
+        }
         .sidebar {
             width: 25%;
-            background-color: #e0f7fa;
+            background-color: #75b4e4;
             border-right: 1px solid #ddd;
             padding: 20px;
             overflow-y: auto;
         }
         .sidebar h1 {
-            font-size: 24px;
+            font-size: 34px;
+            /* border: 2px solid red; */
+            width: 121%;
+            margin-left: 3px;
             margin-bottom: 20px;
-            color: #00796b;
+            color: #043873;
         }
+        .navbar{
+  display: flex;
+  width: 111%;
+  height: 67px;
+   margin-left: -16px;
+  margin-top: -15px;
+  box-shadow: 0 0 10px rgba(3, 3, 3, 0.908);
+}
+.navbar img{
+  width: 20%;
+  height: 90%;
+  margin-top: 5px;
+  mix-blend-mode: color-burn;
+  
+}
+.navbar h1{
+    margin-top: 13px;
+}
         .sidebar ul {
             list-style-type: none;
             padding: 0;
@@ -45,24 +76,32 @@
             width: 100%;
             padding: 10px;
             font-size: 18px;
-            background-color: #e0f7fa;
+            background-color: #e0f2fa;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            /* border-radius: 4px; */
+            /* border: 2px solid red; */
             cursor: pointer;
             text-align: left;
-            color: #00796b;
+            color: #043873;
         }
         .sidebar ul li button:hover {
-            background-color: #b2ebf2;
+            background-color: #b2d0f2;
         }
+        
         .sidebar ul li button.active {
-            background-color: #00796b;
+            background-color: #043873;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            /* border: 2px solid green; */
             color: #fff;
         }
+        
         .content {
             width: 75%;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: rgba(191, 234, 248, 0.858);
             overflow-y: auto;
         }
         .form-group {
@@ -72,29 +111,37 @@
             display: block;
             font-size: 18px;
             margin-bottom: 5px;
-            color: #00796b;
+            /* border: 2px solid red; */
+            color: #043873;
         }
         .form-group input {
             width: 50%;
             padding: 8px;
             font-size: 16px;
-            border: 1px solid #ddd;
+            background-color: #bae0f1ce;
+            border: 1px solid #857f7f;
             border-radius: 4px;
         }
+        
         .help {
             text-align: right;
             font-size: 18px;
-            color: #00796b;
+            color: #043873;
         }
         .header {
             width: 100%;
-            background-color: #e0f7fa;
-            border-bottom: 1px solid #ddd;
+            /* position: fixed; */
+            /* background-color: #e0f7fa; */
+            background-color: #75b4e4;
+            box-shadow: 0 0 10px rgba(3, 3, 3, 0.908);
+            margin-top: -15px;
+            /* border-bottom: 1px solid #ddd; */
             padding: 20px;
+            margin-left: -20px;
             text-align: center;
             font-size: 24px;
             font-weight: bold;
-            color: #00796b;
+            color: #043873;
         }
         .button-group {
             margin-top: 20px;
@@ -102,7 +149,7 @@
         .button-group button {
             padding: 10px 20px;
             font-size: 18px;
-            background-color: #00796b;
+            background-color: #043873;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -110,7 +157,7 @@
             margin-right: 10px;
         }
         .button-group button:hover {
-            background-color: #004d40;
+            background-color: #050063;
         }
         .consent-group {
             display: flex;
@@ -130,7 +177,7 @@
         }
         .remove-button:hover {
             background-color: #d32f2f;
-        }
+        } 
     </style>
     <script>
         function showSection(section) {
@@ -198,14 +245,17 @@
 <body onload="showSection('personalInfo')">
     <div class="container">
         <div class="sidebar">
-            <h1>MEDIVAULT</h1>
+            <div class="navbar">
+                <img src="images/Untitled design.jpg">
+                <h1><span class="h1colour">MEDI</span><span class="h2colour">VAULT</span></h1>
+            </div>
             <ul>
                 <li><button class="active" onclick="showSection('personalInfo')">1. Personal Information</button></li>
                 <li><button onclick="showSection('professionalInfo')">2. Professional Info</button></li>
                 <li><button onclick="showSection('authSecurity')">3. Authentication and Security</button></li>
                 <li><button onclick="showSection('additionalInfo')">4. Additional Info</button></li>
                 <li><button onclick="showSection('uploadDocument')">5. Upload Document</button></li>
-                <li><button onclick="showSection('submit'); populateOverview();" class="submit-button">6. Submit</button></li>
+                <li><button onclick="showSection('submit');populateOverview();" class="submit-button">6. Submit</button></li>
             </ul>
         </div>
         <div class="content">
@@ -372,4 +422,10 @@
                     <label for="consent">I hereby declare that the information provided is true and correct to the best of my knowledge.</label>
                 </div>
                 <div class="button-group">
-                    <button class="next-button" onclick="showSection('upload');
+                    <button class="next-button" onclick="showSection('upload') ">Submit</button>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </body>
+                </html>          
